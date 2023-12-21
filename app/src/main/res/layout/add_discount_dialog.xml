@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Discount"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cancel"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="#E10E6BF1"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/d_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Discount Name"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+        <RadioGroup
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/pricepercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:orientation="horizontal"
+                android:text="price"
+                android:textStyle="bold|italic"
+                android:textColor="@color/cyanbase"
+                android:textSize="18dp"
+                />
+
+            <RadioButton
+                android:id="@+id/percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="percent"
+                android:textStyle="bold|italic"
+                android:textColor="@color/cyanbase"
+                android:textSize="18dp"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/price_percent_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="#E10E6BF1"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/text_priceper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter price/percent"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+
+
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/min_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="#E10E6BF1"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/min_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter minimum Bill Amount"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/max_price_text"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="#E10E6BF1"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/max_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter maximum Discount Amount"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:padding="5dp"
+            android:background="@drawable/b_round"
+            android:backgroundTint="@color/cyanbase"
+            android:id="@+id/pick"
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Image"
+            android:textColor="#FFFFFF"
+            />
+
+            <ImageView
+                android:id="@+id/imageupload"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/b_chooseimage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"/>
+
+        <ProgressBar
+            android:layout_margin="10dp"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="220dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:padding="5dp"
+            android:background="@drawable/b_round"
+            android:backgroundTint="@color/cyanbase"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/upload"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Discount"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+</RelativeLayout>

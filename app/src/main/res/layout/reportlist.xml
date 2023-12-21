@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:weightSum="5"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/billNo"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Bill No" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id = "@+id/Date"
+        android:layout_width = "fill_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1"
+        android:text = "Bill Date" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Item Count" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id = "@+id/qty"
+        android:layout_width = "fill_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1"
+        android:text = "Item Quantity" />
+<!--
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/discountAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Discount Amount" />-->
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/f_b_amount"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Total Bill" />
+</LinearLayout>
+

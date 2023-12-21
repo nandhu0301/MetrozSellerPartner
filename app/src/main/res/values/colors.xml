@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- <color name="colorPrimary">#47D0F3</color>
+         <color name="colorPrimaryDark">#47D0F3</color>
+         <color name="colorAccent">#47D0F3</color>
+         <color name="cyanbase">#08C5F4</color>-->
+        <color name="colorPrimary">#150055</color>
+        <color name="colorPrimaryDark">#150055</color>
+        <color name="colorAccent">#150055</color>
+   <!--     <color name="cyanbase">#2979FF</color>-->
+    <color name="cyanbase">#150055</color>
+    <color name="grey">#E4E4E4</color>
+        <color name="lightcyan">#8DCBF6</color>
+        <color name="White">#FFFFFF</color>
+        <color name="Gradient">#BABABA</color>
+        <color name="black">#000000</color>
+        <color name="white">#FFFFFF</color>
+        <color name="red">#F82C2C</color>
+        <color name="green">#46ED19</color>
+
+    <color name="dot_dark_screen1">#2979FF</color>
+    <color name="dot_dark_screen2">#2979FF</color>
+    <color name="dot_dark_screen3">#2979FF</color>
+    <color name="dot_dark_screen4">#2979FF</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#7E99EC</color>
+    <color name="dot_light_screen2">#7E99EC</color>
+    <color name="dot_light_screen3">#7E99EC</color>
+    <color name="dot_light_screen4">#7E99EC</color>
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@color/cyanbase"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Update Item Price"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+
+            android:layout_margin="5dp"
+
+            android:id="@+id/Cancel_subcategory"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cancel"
+            android:backgroundTint="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/header"
+            android:id="@+id/price"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+
+                >
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:maxLength="5"
+                    android:id="@+id/updateprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Item price"
+                    android:inputType="phone"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <!--
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:id="@+id/pickupdate_image"
+                            android:layout_margin="10dp"
+
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Pick Image"
+                            android:background="@color/cyanbase"/>
+
+            -->
+
+            <!--  <ImageView
+                  android:layout_gravity="center"
+                  android:id="@+id/image_subcategory"
+                  android:layout_below="@+id/updatecatgory_pickimage_button_dialog"
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+                  android:layout_centerHorizontal="true"
+                  android:src="@drawable/b_chooseimage"
+
+                  />
+              <ProgressBar
+                  android:layout_gravity="center"
+                  style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                  android:backgroundTint="@color/black"
+                  android:layout_width="220dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/progressUpdatesubcategory"/>
+  -->
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:padding="5dp"
+
+                android:layout_gravity="center"
+                android:id="@+id/update_item"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatecatagoryImage"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:text="Update Item"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
